@@ -1,0 +1,44 @@
+@import 'variables';
+
+@keyframes GradientShift {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+// Home Hero
+.home-hero {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: $brand_color url(../Images/hero.jpg) center bottom/cover no-repeat;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #77d1f4, #0780b0);
+    background-size: 800% 800%;
+    animation: GradientShift 30s ease infinite;
+    opacity: 0.75;
+  }
+  h1,h3 {
+    color: white;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: white;
+  }
+}
