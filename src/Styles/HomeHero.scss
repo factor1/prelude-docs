@@ -13,6 +13,7 @@
   width: 100%;
   height: 400px;
   background: $brand_color url(../Images/hero.jpg) center bottom/cover no-repeat;
+  transition: height .15s ease-out;
   &:before {
     content: '';
     display: block;
@@ -40,5 +41,11 @@
   }
   a {
     color: white;
+  }
+}
+
+.project-badges {
+  iframe + iframe {
+    margin-left: 12px;
   }
 }

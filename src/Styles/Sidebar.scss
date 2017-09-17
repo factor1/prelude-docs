@@ -1,0 +1,16 @@
+@import 'variables';
+
+.sidebar {
+  ul {
+    position: relative;
+    margin: 0;
+    padding: 30px 0 15px;
+    //border-top: 5px solid complement($brand_color);
+    // border-bottom: 5px solid complement($brand_color);
+    //border-left: 5px solid complement($brand_color);
+    list-style: none;
+    li {
+      padding: 0 0 15px;
+    }
+  }
+}

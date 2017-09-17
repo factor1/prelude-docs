@@ -15,4 +15,44 @@ html, body {
 
 body {
   font-family: $font;
+  color: #1c1c1c;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: $brand_color;
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+    width: 100%;
+    height: 2px;
+    background-color: complement($brand_color);
+    transition: all .15s ease-out;
+    transform: scaleX(0);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      left: 0;
+    }
+  }
+}
+
+blockquote {
+  margin: 0;
+  padding: 5px 5px 5px 10px;
+  border-left: 5px solid complement($brand_color);
+  background-color: #ffe;
+  p {
+    font-style: italic;
+  }
+}
+
+h2 {
+  color: complement($brand_color);
 }

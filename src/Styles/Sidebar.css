@@ -1,0 +1,7 @@
+.sidebar ul {
+  position: relative;
+  margin: 0;
+  padding: 30px 0 15px;
+  list-style: none; }
+  .sidebar ul li {
+    padding: 0 0 15px; }

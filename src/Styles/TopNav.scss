@@ -1,0 +1,29 @@
+@import 'variables';
+
+@keyframes GradientShift {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+// top-nav
+.top-nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  height: auto;
+  background: $brand_color;
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    a {color: white;}
+  }
+}
+
+.project-badges {
+  iframe + iframe {
+    margin-left: 12px;
+  }
+}
