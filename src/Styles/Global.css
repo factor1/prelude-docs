@@ -23,7 +23,7 @@ a {
     display: block;
     position: absolute;
     left: 0;
-    top: calc(50% - 1px);
+    top: 100%;
     width: 100%;
     height: 2px;
     background-color: #ed4100;
